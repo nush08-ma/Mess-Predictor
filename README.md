@@ -25,38 +25,39 @@
 ```python
 developer = {
     "name"        : "Anushka",
+    "Reg no.      : "25BCE10039"
     "university"  : "VIT Bhopal University",
     "batch"       : "B.Tech CSE · 2025–2029",
     "based_in"    : "VIT Bhopal Campus 🇮🇳",
     "interests"   : ["Machine Learning", "Flask & Backend Dev", "Solving Real Problems"],
-    "currently"   : "Building AI tools that actually solve hostel problems 🍽️",
-    "motto"       : "Why wait in line when you can predict it? ✨",
+    "currently"   : "Building AI tools that actually solve hostel problems",
+    "motto"       : "Why wait in line when you can predict it?",
 }
 ```
 
 ---
 
-## 🍽️ What is VIT Mess Predictor?
+## What is VIT Mess Predictor?
 
 A **single-file Flask app** that predicts how long you'll wait in the mess queue at VIT Bhopal — before you even leave your hostel room. It uses a **Gradient Boosting ML model** trained on historical caterer data, with a live feedback loop so the model improves over time.
 
 ---
 
-## ✨ Features
+## Features
 
 | Feature | Details |
 |---|---|
-| 🤖 **ML Prediction** | `GradientBoostingRegressor` (200 estimators) trained on caterer × hour × dish data |
-| 📊 **Hourly Trend Chart** | See wait time patterns across the day for any mess |
-| 🥬 **Popular vs Quiet** | Side-by-side chart comparing popular vs quiet dish wait times |
-| 🎯 **Confidence Band** | 95% confidence interval (best case / worst case) |
-| 🔁 **Live Feedback Loop** | Submit your actual wait → model retrains instantly |
-| 🏠 **Zero Setup Frontend** | Flask serves the entire HTML/CSS/JS UI — no separate frontend needed |
-| 🍛 **4 Caterers Covered** | Mayuri · Safal · JB · AB Catering |
+| **ML Prediction** | `GradientBoostingRegressor` (200 estimators) trained on caterer × hour × dish data |
+| **Hourly Trend Chart** | See wait time patterns across the day for any mess |
+| **Popular vs Quiet** | Side-by-side chart comparing popular vs quiet dish wait times |
+| **Confidence Band** | 95% confidence interval (best case / worst case) |
+| **Live Feedback Loop** | Submit your actual wait → model retrains instantly |
+| **Zero Setup Frontend** | Flask serves the entire HTML/CSS/JS UI — no separate frontend needed |
+| **4 Caterers Covered** | Mayuri · Safal · JB · AB Catering |
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ```bash
 # 1. Clone or download mess.py
@@ -71,11 +72,11 @@ python mess.py
 # → http://127.0.0.1:5000
 ```
 
-> ⚠️ **Windows users:** If you get `ModuleNotFoundError: flask`, use `python3.13 -m pip install flask` instead of plain `pip install flask`. See [this common issue](#-common-issues).
+> **Windows users:** If you get `ModuleNotFoundError: flask`, use `python3.13 -m pip install flask` instead of plain `pip install flask`. See [this common issue](#-common-issues).
 
 ---
 
-## 🧠 How the ML Works
+## How the ML Works
 
 ```
 Input:  caterer + hour (PM) + food item + is_popular flag
@@ -93,7 +94,7 @@ Fallback to **rule-based regression** if ML isn't ready or encounters an unseen 
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 mess.py              ← entire app (backend + ML + frontend)
@@ -115,7 +116,7 @@ Single-file architecture — no build step, no config, no env files needed.
 
 ---
 
-## ⚠️ Common Issues
+## Common Issues
 
 **`ModuleNotFoundError: No module named 'flask'` after installing**
 
