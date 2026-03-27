@@ -1,26 +1,4 @@
-<div align="center">
-
-<!-- Wave Header -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=VIT%20Mess%20Predictor&fontSize=48&fontColor=fff&animation=twinkling&fontAlignY=35&desc=AI-powered%20mess%20wait%20time%20prediction%20for%20VIT%20Bhopal&descAlignY=58&descSize=18" />
-
-<!-- Typing SVG -->
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=F97316&center=true&vCenter=true&width=600&lines=Predict+your+mess+wait+time+%F0%9F%8D%BD%EF%B8%8F;Powered+by+Gradient+Boosting+ML+%F0%9F%A4%96;Flask+%2B+SQLite+%2B+scikit-learn;VIT+Bhopal+%E2%80%A2+Hostel+Life+Optimized+%E2%9C%85;Submit+feedback+%E2%86%92+model+retrains+live!" alt="Typing SVG" />
-</a>
-
-<br/>
-
-![Python](https://img.shields.io/badge/Python-3.13-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-3.1.3-000000?style=for-the-badge&logo=flask&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-Database-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
-![Chart.js](https://img.shields.io/badge/Chart.js-Visualizations-FF6384?style=for-the-badge&logo=chartdotjs&logoColor=white)
-
-</div>
-
----
-
-## 🧑‍💻 About Me
+## About Me
 
 ```python
 developer = {
@@ -105,7 +83,7 @@ Single-file architecture — no build step, no config, no env files needed.
 
 ---
 
-## 🔌 API Endpoints
+##API Endpoints
 
 | Method | Endpoint | Description |
 |---|---|---|
@@ -129,7 +107,7 @@ python3.13 -m pip install flask scikit-learn numpy
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Backend** — Python · Flask · SQLite
 - **ML** — scikit-learn `GradientBoostingRegressor` · `LabelEncoder` · NumPy
@@ -138,15 +116,6 @@ python3.13 -m pip install flask scikit-learn numpy
 
 ---
 
-## 💬 Dev Quote
-
-<div align="center">
-
-![Quote](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)
-
-</div>
-
----
 
 <div align="center">
 
