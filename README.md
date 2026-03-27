@@ -25,7 +25,7 @@
 ```python
 developer = {
     "name"        : "Anushka",
-    "Reg no.      : "25BCE10039"
+    "Reg no.      : "25BCE10039",
     "university"  : "VIT Bhopal University",
     "batch"       : "B.Tech CSE · 2025–2029",
     "based_in"    : "VIT Bhopal Campus 🇮🇳",
