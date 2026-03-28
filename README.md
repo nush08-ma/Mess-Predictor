@@ -24,17 +24,14 @@ A single-file Flask app that predicts how long you'll wait in the mess queue at 
 
 ### 1. Clone or download mess.py
 
-### 2. Install dependencies (use the SAME Python that runs the script!)
-python3.13 -m pip install flask scikit-learn numpy
+### 2. Install dependencies 
+Install flask,scikit-learn,numpy
 
 ### 3. Run
 python mess.py
 
 ### 4. Open browser
 http://127.0.0.1:5000
-
-
-**Windows users:** If you get `ModuleNotFoundError: flask`, use `python3.13 -m pip install flask` instead of plain `pip install flask`. See [this common issue](#-common-issues).
 
 
 ## How the ML Works
@@ -51,7 +48,7 @@ http://127.0.0.1:5000
 5 .Confidence band: ±20% lower / +30% upper
 
 
-Fallback to **rule-based regression** if ML isn't ready or encounters an unseen label.
+Fallback to rule-based regression if ML isn't ready or encounters an unseen label.
 
 
 ## Project Structure
@@ -78,6 +75,9 @@ python3.13 -m pip install flask scikit-learn numpy
 ## Tech Stack
 
 **Backend** — Python , Flask , SQLite
+
 **ML** — scikit-learn `GradientBoostingRegressor` , `LabelEncoder` , NumPy
+
 **Frontend** — Vanilla HTML/CSS/JS , Chart.js (CDN)
+
 **DB** — SQLite (auto-seeded with 48 sample records across 4 caterers)
