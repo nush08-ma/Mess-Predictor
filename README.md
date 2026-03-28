@@ -1,25 +1,6 @@
-## About Me
-
-```python
-developer = {
-    "name"        : "Anushka",
-    "Reg no.      : "25BCE10039",
-    "university"  : "VIT Bhopal University",
-    "batch"       : "B.Tech CSE · 2025–2029",
-    "based_in"    : "VIT Bhopal Campus 🇮🇳",
-    "interests"   : ["Machine Learning", "Flask & Backend Dev", "Solving Real Problems"],
-    "currently"   : "Building AI tools that actually solve hostel problems",
-    "motto"       : "Why wait in line when you can predict it?",
-}
-```
-
----
-
 ## What is VIT Mess Predictor?
 
-A **single-file Flask app** that predicts how long you'll wait in the mess queue at VIT Bhopal — before you even leave your hostel room. It uses a **Gradient Boosting ML model** trained on historical caterer data, with a live feedback loop so the model improves over time.
-
----
+A single-file Flask app that predicts how long you'll wait in the mess queue at any mess from your campus ( here, VIT Bhopal) before you even leave your hostel room. It uses a Gradient Boosting ML model trained on historical caterer data, with a live feedback loop so the model improves over time.
 
 ## Features
 
