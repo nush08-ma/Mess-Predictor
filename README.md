@@ -21,62 +21,48 @@ A single-file Flask app that predicts how long you'll wait in the mess queue at 
 
 ##  Quick Start
 
-```bash
-# 1. Clone or download mess.py
 
-# 2. Install dependencies (use the SAME Python that runs the script!)
+### 1. Clone or download mess.py
+
+### 2. Install dependencies (use the SAME Python that runs the script!)
 python3.13 -m pip install flask scikit-learn numpy
 
-# 3. Run
+### 3. Run
 python mess.py
 
-# 4. Open browser
-# → http://127.0.0.1:5000
-```
+### 4. Open browser
+http://127.0.0.1:5000
 
-> **Windows users:** If you get `ModuleNotFoundError: flask`, use `python3.13 -m pip install flask` instead of plain `pip install flask`. See [this common issue](#-common-issues).
 
----
+**Windows users:** If you get `ModuleNotFoundError: flask`, use `python3.13 -m pip install flask` instead of plain `pip install flask`. See [this common issue](#-common-issues).
+
 
 ## How the ML Works
 
-```
-Input:  caterer + hour (PM) + food item + is_popular flag
-   ↓
-LabelEncoder → numerical encoding
-   ↓
-GradientBoostingRegressor (n=200, lr=0.08, depth=4)
-   ↓
-Output: predicted wait time in minutes
-   ↓
-Confidence band: ±20% lower / +30% upper
-```
+
+1 .Input:  caterer + hour (PM) + food item + is_popular flag
+
+2 .LabelEncoder → numerical encoding
+
+3 .GradientBoostingRegressor (n=200, lr=0.08, depth=4)
+
+4 .Output: predicted wait time in minutes
+
+5 .Confidence band: ±20% lower / +30% upper
+
 
 Fallback to **rule-based regression** if ML isn't ready or encounters an unseen label.
 
----
 
 ## Project Structure
 
-```
-mess.py              ← entire app (backend + ML + frontend)
-vit_campus_ai.db     ← SQLite DB (auto-created on first run)
-```
+
+mess.py              : entire app (backend + ML + frontend)
+
+vit_campus_ai.db     : SQLite DB (auto-created on first run)
+
 
 Single-file architecture — no build step, no config, no env files needed.
-
----
-
-##API Endpoints
-
-| Method | Endpoint | Description |
-|---|---|---|
-| `GET` | `/api/messes` | List all available caterers |
-| `GET` | `/api/menu?caterer=X` | Get food items + hours for a caterer |
-| `POST` | `/api/predict` | Get ML wait prediction + charts data |
-| `POST` | `/api/feedback` | Submit actual wait → retrain model |
-
----
 
 ## Common Issues
 
@@ -84,16 +70,14 @@ Single-file architecture — no build step, no config, no env files needed.
 
 Windows has multiple Python installs. `pip` and `python` may point to different versions.
 
-```powershell
-# Fix: always use -m pip with the exact python that runs your script
-python3.13 -m pip install flask scikit-learn numpy
-```
 
----
+### Fix: always use -m pip with the exact python that runs your script
+python3.13 -m pip install flask scikit-learn numpy
+
 
 ## Tech Stack
 
-- **Backend** — Python · Flask · SQLite
-- **ML** — scikit-learn `GradientBoostingRegressor` · `LabelEncoder` · NumPy
-- **Frontend** — Vanilla HTML/CSS/JS · Chart.js (CDN)
-- **DB** — SQLite (auto-seeded with 48 sample records across 4 caterers)
+**Backend** — Python , Flask , SQLite
+**ML** — scikit-learn `GradientBoostingRegressor` , `LabelEncoder` , NumPy
+**Frontend** — Vanilla HTML/CSS/JS , Chart.js (CDN)
+**DB** — SQLite (auto-seeded with 48 sample records across 4 caterers)
