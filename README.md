@@ -4,17 +4,14 @@ A single-file Flask app that predicts how long you'll wait in the mess queue at 
 
 ## Features
 
-| Feature | Details |
-|---|---|
-| **ML Prediction** | `GradientBoostingRegressor` (200 estimators) trained on caterer × hour × dish data |
-| **Hourly Trend Chart** | See wait time patterns across the day for any mess |
-| **Popular vs Quiet** | Side-by-side chart comparing popular vs quiet dish wait times |
-| **Confidence Band** | 95% confidence interval (best case / worst case) |
-| **Live Feedback Loop** | Submit your actual wait → model retrains instantly |
-| **Zero Setup Frontend** | Flask serves the entire HTML/CSS/JS UI — no separate frontend needed |
-| **4 Caterers Covered** | Mayuri · Safal · JB · AB Catering |
+**ML Prediction** : `GradientBoostingRegressor` (200 estimators) trained on caterer × hour × dish data.
+**Hourly Trend Chart**: See wait time patterns across the day for any mess.
+**Popular vs Quiet** : Side-by-side chart comparing popular vs quiet dish wait times.
+**Confidence Band** : 95% confidence interval (best case / worst case).
+**Live Feedback Loop** :Submit your actual wait so model retrains instantly.
+**Zero Setup Frontend** : Flask serves the entire HTML/CSS/JS UI — no separate frontend needed.
+**4 Caterers Covered** : Mayuri , Safal , JB , AB Catering.
 
----
 
 ##  Quick Start
 
